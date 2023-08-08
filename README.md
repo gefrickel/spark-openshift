@@ -9,7 +9,7 @@ und
  -p WORKER_REPLICAS="3"
 ````
 verhunzen das yaml genau so wie wenn man garnichts spezifiziert.
-Wenn man aber einfach nur eine Zahl reinschreibt, z.B. 3. dann gehts. \
+Wenn man aber einfach nur eine Zahl reinschreibt, z.B. 3. dann gehts.
 
 Sowas hier geht gut, nachdem man die 3 plaziertz hat:
 
