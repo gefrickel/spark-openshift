@@ -14,7 +14,7 @@ Wenn man aber einfach nur eine Zahl reinschreibt, z.B. 3. dann gehts.
 Sowas hier geht gut, nachdem man die 3 plaziertz hat:
 
 ````
-oc process -f spark-template.yml -p CLUSTER_NAME="mdspark" -p USERNAME="user" -p PASSWORD="keins" -p APPLICATION_DOMAIN_SUFFIX="pingu.ibmlab.de" | oc apply -f -  
+oc process -f spark-template.yml -p CLUSTER_NAME="mdspark" -p USERNAME="user" -p PASSWORD="user" -p APPLICATION_DOMAIN_SUFFIX="apps.pingu.ibmlab.de" | oc apply -f -
 ````
 
 
