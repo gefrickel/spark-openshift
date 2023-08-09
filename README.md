@@ -17,6 +17,14 @@ Sowas hier geht gut, nachdem man die 3 plaziertz hat:
 oc process -f spark-template.yml -p CLUSTER_NAME="mdspark" -p USERNAME="user" -p PASSWORD="user" -p APPLICATION_DOMAIN_SUFFIX="apps.pingu.ibmlab.de" | oc apply -f -
 ````
 
+# Uninstall 
+
+````
+oc delete all -l app=spark
+oc delete configmap -l app=spark
+oc delete secret -l app=spark
+oc delete pvc -l app=spark
+````
 
 
 # spark-openshift
