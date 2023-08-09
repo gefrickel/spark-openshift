@@ -302,7 +302,7 @@ objects:
   metadata:
     name: ${CLUSTER_NAME}-spark-worker
   spec:
-    replicas: ${WORKER_REPLICAS}
+    replicas: 3
     template:
       metadata:
         annotations:
@@ -429,6 +429,8 @@ objects:
               value: ${EXECUTOR_CORES_DEFAULT}
             - name: SPARK_EXECUTOR_MEMORY_DEFAULT
               value: ${EXECUTOR_MEMORY_DEFAULT}
+            - name: XDG_CACHE_HOME
+              value: /mnt/${CLUSTER_NAME}-pvc
             resources:
               requests:
                 cpu: ${DRIVER_CPU}
